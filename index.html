@@ -1,234 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Hub - Unreal Engine Asset Productivity Tool</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f1410;
-      color: #e8f5e9;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Hub - Unreal Engine Asset Productivity Tool</title>
 
-    header {
-      padding: 80px 24px;
-      text-align: center;
-      background: linear-gradient(135deg, #0f1410, #12351e);
-    }
+<!-- Keep the same style block from your Project Doctor page here -->
 
-    h1 {
-      font-size: 56px;
-      margin: 0;
-      color: #7cff9b;
-    }
-
-    h2 {
-      color: #7cff9b;
-      margin-top: 48px;
-    }
-
-    h3 {
-      color: #b8ffca;
-    }
-
-    .tagline {
-      font-size: 24px;
-      margin-top: 12px;
-      color: #c7ffd5;
-    }
-
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 40px 24px;
-    }
-
-    .nav {
-      margin-top: 32px;
-    }
-
-    .nav a {
-      color: #7cff9b;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 32px;
-    }
-
-    .card {
-      background: #182018;
-      border: 1px solid #2c5f38;
-      border-radius: 12px;
-      padding: 20px;
-    }
-
-    .steps {
-      display: grid;
-      gap: 20px;
-      margin-top: 24px;
-    }
-
-    .step {
-      background: #151d15;
-      border-left: 4px solid #7cff9b;
-      padding: 18px;
-      border-radius: 8px;
-    }
-
-    .number {
-      color: #7cff9b;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px;
-      color: #8fa897;
-      border-top: 1px solid #243024;
-      margin-top: 40px;
-    }
-  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Project Hub</h1>
-  <div class="tagline">Find. Favorite. Launch.</div>
-  <p>
-    A lightweight Unreal Engine productivity tool designed to help you instantly
-    find, organize, and reopen the assets you use most.
-  </p>
+<div class="hero">
+    <div class="hero-side hero-left"></div>
+    <div class="hero-side hero-right"></div>
+    <img src="ProjectHubThumbnail.png" alt="Project Hub">
+</div>
 
-  <div class="nav">
-    <a href="#features">Features</a>
-    <a href="#quickstart">Quick Start</a>
-    <a href="#filters">Asset Filters</a>
-    <a href="#notes">Notes</a>
-  </div>
-</header>
+<div class="container">
 
-<main class="container">
-
-  <section id="features">
-    <h2>Core Features</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Intelligent Asset Search</h3>
-        <p>Search your entire project with smart ranking designed for Unreal Engine workflows.</p>
-      </div>
-
-      <div class="card">
-        <h3>Favorites</h3>
-        <p>Pin important assets for instant access across editor sessions.</p>
-      </div>
-
-      <div class="card">
-        <h3>Recently Opened</h3>
-        <p>Automatically tracks assets opened during development so you can quickly return to your workflow.</p>
-      </div>
-
-      <div class="card">
-        <h3>Most Used</h3>
-        <p>Surfaces the assets you interact with most often based on real usage.</p>
-      </div>
+<div class="header-block">
+    <div class="eyebrow">
+        <span class="status-dot"></span>
+        Unreal Engine Asset Productivity Tool
     </div>
-  </section>
 
-  <section id="quickstart">
-    <h2>Quick Start</h2>
+    <h1>Project Hub</h1>
 
-    <div class="steps">
-      <div class="step">
-        <div class="number">01</div>
-        <strong>Open Project Hub</strong>
-        <p>Launch Project Hub from the Unreal Engine Tools menu and dock it anywhere in your editor layout.</p>
-      </div>
+    <p class="tagline">
+        Find. Favorite. Launch.
+    </p>
 
-      <div class="step">
-        <div class="number">02</div>
-        <strong>Search Assets</strong>
-        <p>Use the search bar to instantly find assets across your project.</p>
-      </div>
+    <p class="lead">
+        Project Hub is a lightweight productivity dashboard for Unreal Engine.
+        It helps developers quickly find, favorite, reopen, and manage the assets
+        they use most without repeatedly digging through the Content Browser.
+    </p>
 
-      <div class="step">
-        <div class="number">03</div>
-        <strong>Open Assets</strong>
+    <div class="actions">
+        <a class="button" href="#quick-start">Quick Start</a>
+        <a class="button secondary" href="#asset-filters">Asset Filters</a>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <strong>Smart Search</strong>
+            <span>Find project assets faster</span>
+        </div>
+
+        <div class="stat">
+            <strong>Favorites</strong>
+            <span>Pin important assets</span>
+        </div>
+
+        <div class="stat">
+            <strong>Usage History</strong>
+            <span>Recent and most-used assets</span>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Asset Search</h3>
+<ul class="feature-list">
+<li>Project-wide asset search</li>
+<li>Blueprint-prioritized ranking</li>
+<li>Exact-match boosting</li>
+<li>Asset type filtering</li>
+<li>Generated asset filtering</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Workflow Tools</h3>
+<ul class="feature-list">
+<li>Favorites</li>
+<li>Recently Opened</li>
+<li>Most Used Assets</li>
+<li>Persistent usage data</li>
+<li>Double-click asset opening</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Editor Integration</h3>
+<ul class="feature-list">
+<li>Dockable Window</li>
+<li>Native Asset Icons</li>
+<li>Content Browser Friendly</li>
+<li>Editor-only Plugin</li>
+<li>No Runtime Impact</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Why Use Project Hub?</h2>
+
+<div class="workflow">
+    <div class="step">
+        <div class="step-number">01</div>
+        <strong>Search instantly</strong>
+        <p>Use the search bar to quickly find Blueprints, Materials, Meshes, Maps, UI assets and more.</p>
+    </div>
+
+    <div class="step">
+        <div class="step-number">02</div>
+        <strong>Open assets faster</strong>
         <p>Double-click any result to open it directly in the appropriate Unreal asset editor.</p>
-      </div>
-
-      <div class="step">
-        <div class="number">04</div>
-        <strong>Manage Favorites</strong>
-        <p>Add frequently used assets to Favorites for fast access from any project session.</p>
-      </div>
     </div>
-  </section>
 
-  <section id="filters">
-    <h2>Asset Filters</h2>
-    <p>Project Hub includes built-in filtering for common Unreal asset types.</p>
+    <div class="step">
+        <div class="step-number">03</div>
+        <strong>Favorite key assets</strong>
+        <p>Pin the assets you use constantly so they are always available in one place.</p>
+    </div>
 
-    <ul>
-      <li>All Assets</li>
-      <li>Blueprints</li>
-      <li>Materials</li>
-      <li>Meshes</li>
-      <li>Textures</li>
-      <li>Animations</li>
-      <li>Audio</li>
-      <li>Niagara</li>
-      <li>UI</li>
-      <li>Maps</li>
-      <li>Data Assets</li>
-      <li>Input Assets</li>
-      <li>Sequences</li>
-    </ul>
-  </section>
+    <div class="step">
+        <div class="step-number">04</div>
+        <strong>Return to your workflow</strong>
+        <p>Use Recently Opened and Most Used to quickly resume work without searching again.</p>
+    </div>
+</div>
 
-  <section>
-    <h2>Editor Integration</h2>
-    <ul>
-      <li>Native Unreal Engine editor integration</li>
-      <li>Dockable editor tab</li>
-      <li>Native asset icons</li>
-      <li>Persistent favorites and usage history</li>
-      <li>Double-click asset opening</li>
-      <li>Smart search ranking</li>
-      <li>Asset type filtering</li>
-      <li>Automatic project indexing</li>
-    </ul>
-  </section>
+</div>
 
-  <section id="notes">
-    <h2>Important Notes</h2>
-    <ul>
-      <li>Project Hub is an editor-only plugin.</li>
-      <li>It does not affect packaged builds.</li>
-      <li>Usage data is stored locally inside the project.</li>
-      <li>Currently tested and supported on Unreal Engine 5.7.</li>
-    </ul>
-  </section>
+<div class="section">
 
-</main>
+<h2>Installation</h2>
 
-<footer>
-  Project Hub © 2026 HyperAsset
-</footer>
+<div class="code">
+1. Install Project Hub from Fab.<br>
+2. Enable the plugin in Unreal Engine.<br>
+3. Restart the editor.<br>
+4. Open Project Hub from the Tools menu.
+</div>
+
+</div>
+
+<div class="section" id="quick-start">
+
+<h2>Quick Start</h2>
+
+<div class="code">
+1. Open Project Hub.<br>
+2. Type into the search bar.<br>
+3. Use the asset type dropdown to narrow results.<br>
+4. Double-click a result to open it.<br>
+5. Click Favorite to pin important assets.<br>
+6. Use Recently Opened and Most Used to return to active work.
+</div>
+
+</div>
+
+<div class="section" id="asset-filters">
+
+<h2>Asset Filters</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Common Assets</h3>
+<p>
+Filter by Blueprints, Materials, Meshes, Textures, Animations, Audio, Niagara, UI, Maps, Data Assets, Input Assets and Sequences.
+</p>
+</div>
+
+<div class="card">
+<h3>Cleaner Results</h3>
+<p>
+Project Hub filters out engine content, redirectors, external actors and generated assets to keep search results focused.
+</p>
+</div>
+
+<div class="card">
+<h3>Smart Ranking</h3>
+<p>
+Blueprints, exact matches, favorites, recently opened and frequently used assets are prioritized automatically.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Asset Navigation</h2>
+
+<ul>
+<li>Double-click assets to open them directly.</li>
+<li>Favorite important assets from search results.</li>
+<li>Right-click favorites to remove them.</li>
+<li>Track recently opened assets automatically.</li>
+<li>Surface most-used assets based on real editor usage.</li>
+</ul>
+
+<div class="results-panel">
+    <div class="result-row">
+        <span class="badge info">SEARCH</span>
+        <span>Find project assets from a single dockable window.</span>
+    </div>
+
+    <div class="result-row">
+        <span class="badge warning">FILTER</span>
+        <span>Narrow results by common Unreal Engine asset types.</span>
+    </div>
+
+    <div class="result-row">
+        <span class="badge error">FOCUS</span>
+        <span>Spend less time navigating folders and more time building.</span>
+    </div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Supported Version</h2>
+
+<div class="notice">
+Project Hub is currently tested and supported on Unreal Engine 5.7.
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Important Notes</h2>
+
+<div class="notice">
+Project Hub is an editor-only productivity plugin. It does not affect packaged builds and stores usage data locally inside the project.
+</div>
+
+</div>
+
+<div class="footer">
+Project Hub © 2026 HyperAsset
+</div>
+
+</div>
+
+<!-- Keep the same script block from your Project Doctor page here -->
 
 </body>
 </html>
