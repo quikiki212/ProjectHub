@@ -249,7 +249,65 @@ Project Hub © 2026 HyperAsset
 
 </div>
 
-<!-- Keep the same script block from your Project Doctor page here -->
+<script>
+const hero = document.querySelector('.hero');
+
+let targetScrollY = 0;
+let currentScrollY = 0;
+let isAnimating = false;
+
+function animateHero()
+{
+    currentScrollY += (targetScrollY - currentScrollY) * 0.12;
+
+    const fadeDistance = 700;
+    const progress = Math.min(currentScrollY / fadeDistance, 1);
+
+    hero.style.opacity = 1 - progress;
+    hero.style.transform = `translateY(${-progress * 30}px) scale(${1 - progress * 0.06})`;
+
+    if (Math.abs(targetScrollY - currentScrollY) > 0.5)
+    {
+        requestAnimationFrame(animateHero);
+    }
+    else
+    {
+        isAnimating = false;
+    }
+}
+
+window.addEventListener('scroll', () =>
+{
+    targetScrollY = window.scrollY;
+
+    if (!isAnimating)
+    {
+        isAnimating = true;
+        requestAnimationFrame(animateHero);
+    }
+}, { passive:true });
+
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver((entries) =>
+{
+    entries.forEach((entry) =>
+    {
+        if (entry.isIntersecting)
+        {
+            entry.target.classList.add('visible');
+        }
+    });
+},
+{
+    threshold:0.12
+});
+
+sections.forEach((section) =>
+{
+    observer.observe(section);
+});
+</script>
 
 </body>
 </html>
